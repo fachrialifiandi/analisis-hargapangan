@@ -14,11 +14,11 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    # Membaca file CSV
+
     try:
-        df = pd.read_excel("tes.xlsx")
+        df = pd.read_excel("data.xlsx")
     except FileNotFoundError:
-        st.error("File 'tes.xlsx' tidak ditemukan.")
+        st.error("File tidak ditemukan.")
         return pd.DataFrame()
 
     # --- MEMBERSIHKAN DATA ---
@@ -131,7 +131,7 @@ with col_right:
         fig_map = px.scatter_mapbox(
             map_data,
             lat="Latitude",
-            lon="Longtitude",  # Sesuai nama kolom di CSV Anda
+            lon="Longtitude",
             color="Harga_Num",
             size_max=15,
             zoom=3.5,

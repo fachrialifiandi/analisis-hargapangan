@@ -3,3 +3,4 @@ selenium
 pandas
 numpy
 plotly
+openpyxl
