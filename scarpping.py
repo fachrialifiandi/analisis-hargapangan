@@ -10,7 +10,7 @@ import random
 from datetime import datetime, timedelta
 
 # ================= KONFIGURASI =================
-TOTAL_HARI = 1
+TOTAL_HARI = 5
 ALAMAT_WEB = "https://panelharga.badanpangan.go.id/harga-eceran-daerah"
 NAMA_FILE_HASIL = "data_pangan.xlsx"
 

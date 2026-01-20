@@ -16,7 +16,7 @@ st.set_page_config(
 def load_data():
 
     try:
-        df = pd.read_excel("data.xlsx")
+        df = pd.read_excel("data_pangan.xlsx")
     except FileNotFoundError:
         st.error("File tidak ditemukan.")
         return pd.DataFrame()
